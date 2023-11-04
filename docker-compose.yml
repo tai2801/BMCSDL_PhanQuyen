@@ -1,0 +1,12 @@
+# Chay SQL Server 2022 de thuc thi bo script database/ (thu tu 01 -> 08)
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: securedb-mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD:-SecureDb@Demo2023}"
+    ports:
+      - "14331:1433"
+    volumes:
+      - ./database:/scripts:ro
