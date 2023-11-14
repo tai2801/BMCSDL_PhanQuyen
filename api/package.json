@@ -1,0 +1,16 @@
+{
+  "name": "securedb-api-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API demo cho SecureDB Access Control (ban demo chay SQLite - ban SQL Server nam o ../database)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/api.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
